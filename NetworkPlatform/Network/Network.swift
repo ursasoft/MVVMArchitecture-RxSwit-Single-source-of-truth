@@ -61,12 +61,10 @@ final class Network<T: Codable> {
             .request(.put, absolutePath, parameters: object.toDictionary(), encoding: JSONEncoding.default)
             // .debug()
             .observe(on: scheduler)
+            .validate(statusCode: 200 ..< 300)
             .response()
-            .map { response -> T in
-                guard response.statusCode == 200 else {
-                    throw AnyLocalizedError("Update failed - incorrect status code for response")
-                }
-                return object
+            .map { _ -> T in
+                object
             }
     }
 
@@ -76,11 +74,8 @@ final class Network<T: Codable> {
             .request(.delete, absolutePath)
             // .debug()
             .observe(on: scheduler)
+            .validate(statusCode: 200 ..< 300)
             .response()
-            .map { response in
-                guard response.statusCode == 200 else {
-                    throw AnyLocalizedError("Delete failed - incorrect status code for response")
-                }
-            }
+            .map { _ in }
     }
 }

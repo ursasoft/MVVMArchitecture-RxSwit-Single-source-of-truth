@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		04064D462802C021009E94C5 /* UIBarButtonItem+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04064D452802C021009E94C5 /* UIBarButtonItem+Ext.swift */; };
-		0427E4C5288D528600889C37 /* AnyLocalizedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427E4C4288D528600889C37 /* AnyLocalizedError.swift */; };
 		043556912806FD5100BCCE72 /* ToastState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043556902806FD5100BCCE72 /* ToastState.swift */; };
 		0441EA6B288BDCFC00AB3430 /* Swift+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0441EA6A288BDCFC00AB3430 /* Swift+Ext.swift */; };
 		045A601E280452E80004EDC4 /* PremieresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A601D280452E80004EDC4 /* PremieresView.swift */; };
@@ -188,7 +187,6 @@
 
 /* Begin PBXFileReference section */
 		04064D452802C021009E94C5 /* UIBarButtonItem+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Ext.swift"; sourceTree = "<group>"; };
-		0427E4C4288D528600889C37 /* AnyLocalizedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyLocalizedError.swift; sourceTree = "<group>"; };
 		043556902806FD5100BCCE72 /* ToastState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastState.swift; sourceTree = "<group>"; };
 		0441EA6A288BDCFC00AB3430 /* Swift+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Ext.swift"; sourceTree = "<group>"; };
 		045A601D280452E80004EDC4 /* PremieresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremieresView.swift; sourceTree = "<group>"; };
@@ -380,7 +378,6 @@
 		0427E4C3288D527B00889C37 /* LocalizedError */ = {
 			isa = PBXGroup;
 			children = (
-				0427E4C4288D528600889C37 /* AnyLocalizedError.swift */,
 				04D5DB36288DD5EA0089B828 /* PremiereValidationError.swift */,
 			);
 			path = LocalizedError;
@@ -1630,7 +1627,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D5DB37288DD5EA0089B828 /* PremiereValidationError.swift in Sources */,
-				0427E4C5288D528600889C37 /* AnyLocalizedError.swift in Sources */,
 				25897BC61E58C42D00D3563C /* PremieresUseCase.swift in Sources */,
 				25897BCB1E58C42D00D3563C /* Premiere.swift in Sources */,
 				515F953C72C69919A1104FE7 /* UseCaseProvider.swift in Sources */,
